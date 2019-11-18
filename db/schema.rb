@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2019_08_13_103910) do
+
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.text "details"
@@ -18,4 +19,5 @@ ActiveRecord::Schema.define(version: 2019_08_13_103910) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end

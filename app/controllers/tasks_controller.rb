@@ -8,7 +8,7 @@ class TasksController < ApplicationController
 
   # GET /tasks/:id
   def show
-    set_task
+    # set_task
   end
 
   # GET /tasks/new
@@ -48,7 +48,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:title, :details)
+    params.require(:task).permit(:title, :details, :completed)
   end
 
   def set_task
